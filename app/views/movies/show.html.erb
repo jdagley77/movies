@@ -1,0 +1,4 @@
+<h1>Show page for <%= @movie.title %> movie</h1>
+<p> Description: <%= @movie.description %></p>
+
+<%= link_to @movie.category.name + " category", category_movies_path(@movie.category) %>
